@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Mantenimiento de Máquinas - Nevería</title>
+    <link rel="stylesheet" href="mantenimiento-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="inventario-crud.html">Inventario</a></li>
+            <li><a href="mermas-crud.html">Mantenimiento de Mermas</a></li>
+            <li><a href="mantenimiento.html">Mantenimiento de Máquinas</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Administrar Mantenimiento de Máquinas</h1>
+        <form id="mantenimiento-form">
+            <label for="machine-name">Nombre de la Máquina:</label>
+            <input type="text" id="machine-name" required>
+
+            <label for="maintenance-date">Fecha de Mantenimiento:</label>
+            <input type="date" id="maintenance-date" required>
+
+            <label for="description">Descripción del Mantenimiento:</label>
+            <textarea id="description" required></textarea>
+
+            <label for="status">Estado:</label>
+            <select id="status" required>
+                <option value="Reparado">Reparado</option>
+                <option value="En espera">En espera</option>
+                <option value="Pendiente">Pendiente</option>
+            </select>
+
+            <button type="submit">Agregar Mantenimiento</button>
+        </form>
+
+        <h2>Historial de Mantenimiento de Máquinas</h2>
+        <table id="mantenimiento-table">
+            <thead>
+                <tr>
+                    <th>Nombre de la Máquina</th>
+                    <th>Fecha</th>
+                    <th>Descripción</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="tabla-mantenimiento.js"></script>
+</body>
+</html>

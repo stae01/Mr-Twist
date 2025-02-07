@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Productos - Nevería</title>
+    <link rel="stylesheet" href="inventario-style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="inventario-crud.html">Inventario</a></li>
+            <li><a href="mermas-crud.html">Gestionar Mermas</a></li>
+            <li><a href="mantenimiento.html">Mantenimiento</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Administrar Productos</h1>
+        <form id="product-form">
+            <input type="hidden" id="product-id">
+            <label for="name">Nombre del Producto:</label>
+            <input type="text" id="name" required>
+            
+            <label for="price">Precio Unitario:</label>
+            <input type="number" id="price" required>
+
+            <label for="quantity">Cantidad:</label>
+            <input type="number" id="quantity" required>
+
+            <label for="description">Descripción:</label>
+            <textarea id="description" required></textarea>
+
+            <button type="submit">Agregar Producto</button>
+        </form>
+
+        <h2>Productos</h2>
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio Unitario</th>
+                    <th>Cantidad</th>
+                    <th>Descripción</th>
+                    <th>Total</th> 
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+          
+        </table>
+    </div>
+
+    <script src="tabla-inventario.js"></script>
+</body>
+</html>
