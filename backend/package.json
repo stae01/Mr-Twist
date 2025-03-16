@@ -1,0 +1,15 @@
+{
+  "name": "mr-twist",
+  "version": "1.0.0",
+  "description": "Sistema de Gestión para Mr.Twist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
